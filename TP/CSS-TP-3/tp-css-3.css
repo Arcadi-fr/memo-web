@@ -130,10 +130,6 @@ button {
 
 /****************************** -- Début du responsive -- *****************************/
 
-/************************ -- Correction -- *********************************/
-
-/********* -- Tablette -- ************/
-
 @media screen and (mac-width: 870px) {
     h1 {
         font-size: 2.5rem;
@@ -197,78 +193,3 @@ button {
 
 }
 
-/*********************** -- Mon code -- ***********************************/
-
-/********* -- Tablette -- ************/
-
-/*
-@media screen and (max-width: 900px){
-    .header {
-        display: block;
-        width: 100%;
-        justify-content: center;
-    }
-    .header-left, .header-right {
-        display: block;
-        width: 100%;
-        justify-content: center;
-        
-    }
-    .header-left h1 {
-        font-size: 3rem;
-    }
-    .img-container img {
-        height: 40px;
-    }
-
-
-    
-}
-*/
-
-/********* -- Smartphone -- **********/
-
-/*
-@media screen and (max-width: 450px) {
-    .header {
-        display: inline-block;
-        width: 100%;
-        justify-content: center;
-    }
-    .header-left, .header-right {
-        display: block;
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-    .header-left h1 {
-        font-size: 3rem;
-    }
-    .infos {
-        display: block;
-        width: 100%;
-    }
-    .infos-left, .infos-right {
-        display: block;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-    }
-    .btn-container, button {
-        justify-content: center;
-        width: 100%;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-
-    .img-container {
-        display: flex;
-        width: 80%;
-    }
-    .img-container img {
-        height: 40px;
-    }
-    
-}
-*/
