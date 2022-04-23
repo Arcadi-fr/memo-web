@@ -26,7 +26,7 @@
     --color-5:  #ebeeff;
     --color-6: #2f4858;
     /* -- Menu -- */
-    --height-menu: 60px;
+    --height-menu: 80px;
 }
 
 
@@ -41,11 +41,14 @@
 
 body {
     font-family: "ubuntu", sans-serif;
+    background-color: var(--color-6);
 }
 
 h1 {
     font-family: "ubuntu-bold", sans-serif;
     font-size: 2.5rem;
+    text-align: center;
+    margin: 10px 0;
     
 }
 
@@ -64,6 +67,7 @@ h3 {
 p {
     font-size: 1rem;
     margin: 10px 0;
+    line-height: 1.5em;
 }
 
 a {
@@ -73,12 +77,10 @@ a {
 
 code {
     font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
     color: var(--color-3);
 }
 
-li {
-    list-style-type: none;
-}
 
 /****** Navigation ******/
 
@@ -95,7 +97,10 @@ nav {
 nav a {
     color: var(--color-1);
     padding: 5px;
-    
+}
+.nav-1 > a {
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
 }
 
 nav > ul {
@@ -150,20 +155,30 @@ nav > ul > li:hover .nav-2 {
     color: white;
 }
 
+nav li {
+    list-style-type: none;
+}
+
 /****** -- Main -- ******/
 
 main {
-    margin: 40px 20px;
+    background: white;
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
 }
 
 main li {
     margin: 0 20px;
-    list-style-type: disc;
+    list-style-type: "\2714";
+    line-height: 2em;
 }
 
 main a {
     color: var(--color-1);
 }
+
+
 main a:visited {
     color: var(--color-2);
 }
@@ -171,7 +186,6 @@ main a:visited {
 main img {
     max-height: 200px;
     border-radius: 10px;
-    
 }
 
 .text-img {
@@ -192,71 +206,3 @@ main img {
 
 
 
-
-/*
-nav {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    
-}
-
-nav > ul {
-    display: flex;
-    text-align: center;
-    height: var(--height-menu);
-}
-
-nav > ul > li {
-    position: relative;
-    height: 100%;
-    flex: 1;
-}
-
-nav ul li a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% -50%);
-
-}
-
-.nav-2 {
-    margin-top: var(--height-menu);
-    width: 100%;
-    text-align: left;
-    overflow: hidden;
-}
-
-.nav-2 li a {
-    height: 50px;
-    padding-left: 20px;
-    width: 100%;
-    align-items: center;
-    display: flex;
-}
-@keyframes rotationFleche {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(90deg);
-    }
-    
-}
-
-.nav-1:hover > a::after {
-    animation: rotationFleche 0.2s linear forwards;
-
-}
-
-@keyframes apparitionMenu {
-    100% {
-        max-height: 50em;
-
-    }
-}
-
-.nav-1:hover > .nav-2 {
-    animation: apparitionMenu 1s forwards;
-}

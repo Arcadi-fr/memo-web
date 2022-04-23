@@ -106,20 +106,20 @@
             <ul>
                 <h3>Bases du fichier CSS</h3>
                 <li>
-                    Pour déclarer des variables : <br>
+                    Déclarer des variables : <br>
                     <code>:root {<br>
                         --color-1: couleur
                     } <br> </code>
                     On les appellent par : <code>attribut: var(--color-1)</code>
                 </li>
-                <li>Pour déclarer les fontes : <br>
-                  <code>@font-face { <br>
+                <li>Déclarer les fontes : <br>
+                    <code>@font-face { <br>
     font-family: "lato-thin";<br>
     src: url(./fonts/Lato-Thin.ttf); <br>
 }<br></code>
                 </li>
                 <li>
-                    Pour annuler les éffets du user-agent : <br>
+                    Annuler les éffets du user-agent (Attention aux éffets sur les bouttons): <br>
                     <code>
                         margin: 0; <br>
                         padding: 0; <br>
@@ -129,16 +129,14 @@
                 <li>
                     Pour que le flex fonctionne bien : <br>
                     <code>box-sizing: border-box</code> <br>
-                    <a href="https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing">box-sizing</a>
+                    <a href="https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing">Plus d'informations sur MDN</a>
                 </li>
-                <li>
+                <p>
                     D'autres élements généraux selon le type de page et la récurrence des moficiations à faire. Par
                     exemple s'il y a beaucoup de li on peut déclarer généralement le type de puce.
-                </li>
-                <li>
                     Après les déclarations générales "*", on peut donner les généralités pour les ancres, les bouttons
                     les titres, les paragraphes etc.
-                </li>
+                </p>
             </ul>
             <div class="css-exemple">
                 <h3>Exemple "*"</h3>
@@ -188,25 +186,27 @@
                 </p>
             </div>
             <div class="main-1">
-              <h3>
-                Insérer une image en background
-              </h3>
-              <p><code>background: url(./img/banner.jpg) center/cover;</code> On peut aussi attribuer "right/cover" par exmple et ajouter "fixed avant l'emplacement". </p>
+                <h3>
+                    Insérer une image en background
+                </h3>
+                <p><code>background: url(./img/banner.jpg) center/cover;</code> On peut aussi attribuer "right/cover"
+                    par exmple et ajouter "fixed avant l'emplacement". </p>
             </div>
             <div class="main-2">
-              <h3>Pour appeler un élément</h3>
-              <ul>
-                <li>Par la classe : <code>.nomdelaclasse</code> </li>
-                <li>Par l'ID : <code>#nomid</code> </li>
-                <li>Par sa balise html : <code>p</code> </li>
-              </ul>
-              <h3>Pour affiner</h3>
-              <ul>
-                <li>On peut préciser le type de la balise html : <code>input[type="text"]</code> </li>
-                <li>on peut ne viser que les enfants et pas les petis-enfants : <code>section > .enfantsseulement</code> </li>
-                <li>On peut viser plusieurs élements : <code> section, #unid, .uneclasse</code></li>
-                <li>On peut etre très précis : <code>nav ul .apropos </code> </li>
-              </ul>
+                <h3>Pour appeler un élément</h3>
+                <ul>
+                    <li>Par la classe : <code>.nomdelaclasse</code> </li>
+                    <li>Par l'ID : <code>#nomid</code> </li>
+                    <li>Par sa balise html : <code>p</code> </li>
+                </ul>
+                <h3>Pour affiner</h3>
+                <ul>
+                    <li>On peut préciser le type de la balise html : <code>input[type="text"]</code> </li>
+                    <li>on peut ne viser que les enfants et pas les petis-enfants :
+                        <code>section > .enfantsseulement</code> </li>
+                    <li>On peut viser plusieurs élements : <code> section, #unid, .uneclasse</code></li>
+                    <li>On peut etre très précis : <code>nav ul .apropos </code> </li>
+                </ul>
     </main>
 
 </body>
