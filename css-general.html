@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>CSS</title>
+</head>
+
+<body>
+    <nav>
+        <img src="/Assets/Images/logo.png" alt="">
+        <ul>
+            <li class="nav-1">
+                <a href="./index.html">Accueil</a>
+            </li>
+            <li class="nav-1">
+                <a href="./html.html">HTML <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="nav-2">
+                    <li>
+                        <a href="/general-html.html">Generalités</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-1/cours-html-1.html">Cours HTML 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-1/tp-html-1.html">TP HTML 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-2/tp-html-2.html">TP HTML 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-3/tp-html-3.html">TP HTML 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-1">
+                <a href="./css.html">CSS <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="nav-2">
+                    <li>
+                        <a href="/css-general.html">Généralités</a>
+                    </li>
+                    <li>
+                        <a href="./css-flexbox.html">Flexbox</a>
+                    </li>
+                    <li>
+                        <a href="./css-grid.html">Grid</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-1/cours-css-1.html">Cours CSS 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-2/cours-css-2.html">Cours CSS 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-1/tp-css-1.html">TP CSS 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-2/tp-css-2.html">TP CSS 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-3/tp-css-3.html">TP CSS 3</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-4/tp-css-4.html">TP CSS 4</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-5/tp-css-5.html">TP CSS 5</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-6/tp-css-6.html">TP CSS 6</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-1">
+                <a href="./Ressources.html">Ressources</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- main -->
+    <main>
+
+        <section class="crea-fichier">
+            <h1>CSS</h1>
+            <h2>Création du fichier CSS</h2>
+            <ul>
+                <h3>Lier le css au html</h3>
+                <li>
+                    <code>
+                    &lt;link rel="stylesheet" href="./style.css">
+                    </code> <strong>ou</strong>
+                </li>
+                <li>
+                    <code>
+                        &lt;style type="text/css"><br>
+                        @import url(styles/habillage.css);<br>
+                        @import url(styles/texte.css);<br>
+                        &lt;/style>
+                    </code>
+                </li>
+            </ul>
+            <ul>
+                <h3>Bases du fichier CSS</h3>
+                <li>
+                    Pour déclarer des variables : <br>
+                    <code>:root {<br>
+                        --color-1: couleur
+                    } <br> </code>
+                    On les appellent par : <code>attribut: var(--color-1)</code>
+                </li>
+                <li>Pour déclarer les fontes : <br>
+                  <code>@font-face { <br>
+    font-family: "lato-thin";<br>
+    src: url(./fonts/Lato-Thin.ttf); <br>
+}<br></code>
+                </li>
+                <li>
+                    Pour annuler les éffets du user-agent : <br>
+                    <code>
+                        margin: 0; <br>
+                        padding: 0; <br>
+                        autres si nécessaires <br>
+                    </code>
+                </li>
+                <li>
+                    Pour que le flex fonctionne bien : <br>
+                    <code>box-sizing: border-box</code> <br>
+                    <a href="https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing">box-sizing</a>
+                </li>
+                <li>
+                    D'autres élements généraux selon le type de page et la récurrence des moficiations à faire. Par
+                    exemple s'il y a beaucoup de li on peut déclarer généralement le type de puce.
+                </li>
+                <li>
+                    Après les déclarations générales "*", on peut donner les généralités pour les ancres, les bouttons
+                    les titres, les paragraphes etc.
+                </li>
+            </ul>
+            <div class="css-exemple">
+                <h3>Exemple "*"</h3>
+                <p>
+                    <code>
+                        * { <br>
+                            margin: 0; <br>
+                            padding: 0 ; <br>
+                            box-sizing: border-box; <br>
+                            font-family: arial; <br>
+                            list-style-type: \261E; <br>
+                        }
+                    </code>
+                </p>
+                <h3>Exemple spécifique</h3>
+                <p>
+                    <code>
+                        button { <br>
+                            background: none; <br>
+                            outline: none; <br>
+                            border: 1px solid white;<br>
+                            color: white;<br>
+                            text-transform: uppercase;<br>
+                            font-family: "roboto-regular";<br>
+                            transition: 0.4 ease;<br>
+                            cursor: pointer;<br>
+                        } <br>
+                        <br>
+                        button:hover {<br>
+                            color: black; <br>
+                            background: white; <br>
+                        } <br>
+                        <br>
+                        a { <br>
+                            text-decoration: none; <br>
+                        } <br>
+                        <br>
+                        body { <br>
+                            margin: 0 auto; <br>
+                            text-align: center; <br>
+                        } <br>
+                        <br>
+                        p { <br>
+                            font-size: 0.9rem; <br>
+                        } <br>
+                    </code>
+                </p>
+            </div>
+            <div class="main-1">
+              <h3>
+                Insérer une image en background
+              </h3>
+              <p><code>background: url(./img/banner.jpg) center/cover;</code> On peut aussi attribuer "right/cover" par exmple et ajouter "fixed avant l'emplacement". </p>
+            </div>
+            <div class="main-2">
+              <h3>Pour appeler un élément</h3>
+              <ul>
+                <li>Par la classe : <code>.nomdelaclasse</code> </li>
+                <li>Par l'ID : <code>#nomid</code> </li>
+                <li>Par sa balise html : <code>p</code> </li>
+              </ul>
+              <h3>Pour affiner</h3>
+              <ul>
+                <li>On peut préciser le type de la balise html : <code>input[type="text"]</code> </li>
+                <li>on peut ne viser que les enfants et pas les petis-enfants : <code>section > .enfantsseulement</code> </li>
+                <li>On peut viser plusieurs élements : <code> section, #unid, .uneclasse</code></li>
+                <li>On peut etre très précis : <code>nav ul .apropos </code> </li>
+              </ul>
+    </main>
+
+</body>
+
+</html>

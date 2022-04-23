@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>HTML</title>
+</head>
+
+<body>
+    <nav>
+        <img src="/Assets/Images/logo.png" alt="">
+        <ul>
+            <li class="nav-1">
+                <a href="./index.html">Accueil</a>
+            </li>
+            <li class="nav-1">
+                <a href="./html.html">HTML <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="nav-2">
+                    <li>
+                        <a href="/general-html.html">Generalités</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-1/cours-html-1.html">Cours HTML 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-1/tp-html-1.html">TP HTML 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-2/tp-html-2.html">TP HTML 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-3/tp-html-3.html">TP HTML 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-1">
+                <a href="./css.html">CSS <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="nav-2">
+                    <li>
+                        <a href="/css-general.html">Généralités</a>
+                    </li>
+                    <li>
+                        <a href="./css-flexbox.html">Flexbox</a>
+                    </li>
+                    <li>
+                        <a href="./css-grid.html">Grid</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-1/cours-css-1.html">Cours CSS 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-2/cours-css-2.html">Cours CSS 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-1/tp-css-1.html">TP CSS 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-2/tp-css-2.html">TP CSS 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-3/tp-css-3.html">TP CSS 3</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-4/tp-css-4.html">TP CSS 4</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-5/tp-css-5.html">TP CSS 5</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-6/tp-css-6.html">TP CSS 6</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-1">
+                <a href="./Ressources.html">Ressources</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="html-table">
+            <div class="html-table-content">
+                <h2>Les tableaux</h2>
+                <ul>
+                    <li>
+                        Appeler le tableau avec <code>&lt;table></code>
+                    </li>
+                    <li>
+                        Ajouter une entête facultative <code>&lt;thead></code>
+                    </li>
+                    <li>
+                        Ajouter des row : <code>&lt;tr></code>
+                    </li>
+                    <li>Dans lesquelles on ajoute des cellules : <code>&lt;td></code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="html-formulaire">
+            <div class="html-formulaire-content">
+                <h2>Les formulaires</h2>
+                <ul>
+                    <li>
+                        Appeler avec : <code>&lt;form action="" method=""></code>
+                    </li>
+                    <li>
+                        Placer un input : <code>&lt;input id="" type="" placeholder=""></code> <br>
+                        Le placeholder affiche le texte par défaut.
+                    </li>
+                    <li>
+                        Placer un label - facultatif : <code>&lt;label for=""> </code> <br>
+                        Il faut associer le label à son input en rensignant l'id dans le for.
+                    </li>
+                    <li>
+                        On peut paramètrer l'input avec un minimum de valeur, des step etc : <br>
+                        <code>&lt;input id="age" type="number" min="0" max="99" step="1" value="18"></code>
+                    </li>
+                    <li>
+                        On peut paramétrer un input de type "select" pour faire un menu déroulant : <br>
+                        <code>&lt;select id="gender"><br>
+                        &lt;option value="homme">Homme&lt;/option>
+                        &lt;option selected value="femme">Femme&lt;/option></code> Le "selected" donne la valeur par défaut.
+                    </li>
+                    <li>
+                        On peut paramètrer un iput de type radio : <br>
+                        <code> &lt;input type="radio" name="type" id="human"><br>
+                            &lt;label for="human">Humain&lt;/label> <br>
+                            &lt;input type="radio" name="type" id="dog"><br>
+                            &lt;label for="human">Chien&lt;/label></code><br>
+                            Lier les inputs radio avec un name est important si l'on veut qu'ils complémentaire à la sélection. Sans cela, les deux sont sélectionnable.
+                    </li>
+                    <li>
+                        On peut placer un input de type checkbox : <code>&lt;input type="checkbox"></code> On peut intégrer la checkbox entre les deux baises input.         
+                    </li>
+                    <li>
+                        Placer la textarea : <code>&lt;textarea cols="30" rows="10" placeholder="Entrez votre texte"></code>
+                    </li>
+                    <li>
+                        Placer le submit : <code>&lt;input type="submit" value="valider"></code>
+                    </li>
+                         
+                    <li>
+                        <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Form">Plus d'informations sur MDN</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="html-divers">
+            <div class="html-divers-container">
+                <h2>Balises diverses</h2>
+                <ul>
+                    <li>
+                        Legende: <code>&lt;caption></code>
+                    </li>
+                    <li>
+                        Vidéo : <code>&lt;video src="" height="" autoplay loop muted>&lt;/video></code> <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/video">Plus d'infos sur MDN</a>
+                    </li>
+                    <li>
+                        Envoi mail : <code>&lt;a href="mailto:adresse@mail.fr">Ecrivez-moi !&lt;/a></code>
+                    </li>
+                    <li>
+                        Download fichier : <code>&lt;a href="./adressedufichier" download="nom-du-fichier">Télécharger&lt;/a></code></li>
+                    </li>
+                </ul>
+
+            </div>
+            
+        </section>
+    </main>

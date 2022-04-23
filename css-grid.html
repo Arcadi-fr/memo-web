@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sandbox-grid.css">
+    <title>Grids</title>
+</head>
+
+<body>
+    <nav>
+        <img src="/Assets/Images/logo.png" alt="">
+        <ul>
+            <li class="nav-1">
+                <a href="./index.html">Accueil</a>
+            </li>
+            <li class="nav-1">
+                <a href="./html.html">HTML <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="nav-2">
+                    <li>
+                        <a href="/general-html.html">Generalités</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-1/cours-html-1.html">Cours HTML 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-1/tp-html-1.html">TP HTML 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-2/tp-html-2.html">TP HTML 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-3/tp-html-3.html">TP HTML 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-1">
+                <a href="./css.html">CSS <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="nav-2">
+                    <li>
+                        <a href="/css-general.html">Généralités</a>
+                    </li>
+                    <li>
+                        <a href="./css-flexbox.html">Flexbox</a>
+                    </li>
+                    <li>
+                        <a href="./css-grid.html">Grid</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-1/cours-css-1.html">Cours CSS 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-2/cours-css-2.html">Cours CSS 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-1/tp-css-1.html">TP CSS 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-2/tp-css-2.html">TP CSS 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-3/tp-css-3.html">TP CSS 3</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-4/tp-css-4.html">TP CSS 4</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-5/tp-css-5.html">TP CSS 5</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-6/tp-css-6.html">TP CSS 6</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-1">
+                <a href="./Ressources.html">Ressources</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="grid-1">
+            <h1>Grids</h1>
+            <ul>
+                <h3>
+                    Pour déclarer la grille
+                </h3>
+                <li>
+                    <code>display: grid</code> sur le parent de la grille.
+                </li>
+                <li>
+                    <code>grid-template-columns: </code> On peut déclarer des fractions ( <code>1fr</code>, des
+                    pourcentages ou des pixels ).br
+                    On peut aussi répéter pour ajouter une ou des colonnes : <code>repeat(2, 1fr)</code> içi, on ajoute
+                    2 fois une fraction.
+                </li>
+                <li>
+                    grid-template-rows: idem aux columns.
+                </li>
+                <li>
+                    <code>grid-gap: 10px</code> Pour créer un espacement entre les items.
+                </li>
+                <li>
+                    <code>grid-column:</code> Pour imposer un ordre dans la grille.
+                </li>
+            </ul>
+            <div class="grid-parents-img">
+
+            </div>
+
+            <h3>
+                Déclaration sur les enfants.
+            </h3>
+            <p>
+                <code>grid-column:</code> Pour imposer un ordre dans la grille. <br>
+                <code>grid-column: 1 / 4</code> Permet de faire un "rowspan". <br>
+                <code>grid-column: 2 / span 2 </code> Permet encore un "rowspan".
+            </p>
+
+            <h3>
+                Grid-template-area
+            </h3>
+            <p>
+                Outils puissant pour dessiner des grilles. Dans un premier temps on dessine la grille avec
+                <code>grid-template-columns</code> puis on délcare le noms des enfants sur la grille area avec
+                <code>grid-area</code>.
+            </p>
+            <div class="grid-template-area-pic">
+                <img src="./Assets/Images/css-grid-7.png" alt="">
+                <img src="./Assets/Images/css-grid-10.png" alt="">
+                <img src="./Assets/Images/css-grid-9.png" alt="">
+            </div>
+
+
+        </section>
+        <section class="sandbox-grid">
+            <h2>Bac à sable</h2>
+            <br>
+            <br>
+            <div class="sandbox-container">
+                <div class="sandbox-1">1</div>
+                <div class="sandbox-2">2</div>
+                <div class="sandbox-3">3</div>
+                <div class="sandbox-4">4</div>
+                <div class="sandbox-5">5</div>
+                <div class="sandbox-6">6</div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

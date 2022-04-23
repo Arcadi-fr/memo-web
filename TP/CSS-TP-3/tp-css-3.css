@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --color1: #ffffffee;
+    --color2: #474dff;
+}
+
+/*********************** -- RESPONSIVE -- ***********************/
+
+
+* {
+    font-family: "inter", sans-serif;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+body {
+    height: 100vh;
+    background-color: #1D1D1D;
+    color: var(--color1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+nav ul:hover {
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+.header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.header-left h3 {
+    font-size: 2.5rem;
+    color: var(--color2);
+}
+
+
+.header-right {
+    width: 50%;
+}
+
+#modem {
+    width: 100%;
+}
+
+.infos {
+    display: flex;
+    background: rgba(0, 0, 0, 0.956);
+    border-radius: 10px;
+}
+
+.infos-left {
+    width: 33%;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+}
+
+button {
+    border: none;
+    background: var(--color2);
+    color: azure;
+    width: 150px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+.infos-right {
+    width: 67%;
+}
+
+.investors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.img-container img {
+    height: 60px;
+}
+
+
+/****************************** -- Début du responsive -- *****************************/
+
+/************************ -- Correction -- *********************************/
+
+/********* -- Tablette -- ************/
+
+@media screen and (mac-width: 870px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-left-container h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.7;
+    }
+}
+
+/********* -- Smartphone -- **********/
+
+@media screen and (max-width: 592px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-left-container h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.7;
+    }
+
+    nav ul {
+        font-size: 0, 7rem;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .header-left,
+    .header-right {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    s .infos {
+        display: block;
+        text-align: center;
+    }
+
+    .infos-left,
+    .infos-right {
+        width: 100%;
+    }
+
+    .btn-container button {
+        margin: 5px auto;
+    }
+
+    .img-container img {
+        height: 40px;
+    }
+
+}
+
+/*********************** -- Mon code -- ***********************************/
+
+/********* -- Tablette -- ************/
+
+/*
+@media screen and (max-width: 900px){
+    .header {
+        display: block;
+        width: 100%;
+        justify-content: center;
+    }
+    .header-left, .header-right {
+        display: block;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .header-left h1 {
+        font-size: 3rem;
+    }
+    .img-container img {
+        height: 40px;
+    }
+
+
+    
+}
+*/
+
+/********* -- Smartphone -- **********/
+
+/*
+@media screen and (max-width: 450px) {
+    .header {
+        display: inline-block;
+        width: 100%;
+        justify-content: center;
+    }
+    .header-left, .header-right {
+        display: block;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .header-left h1 {
+        font-size: 3rem;
+    }
+    .infos {
+        display: block;
+        width: 100%;
+    }
+    .infos-left, .infos-right {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    .btn-container, button {
+        justify-content: center;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
+    .img-container {
+        display: flex;
+        width: 80%;
+    }
+    .img-container img {
+        height: 40px;
+    }
+    
+}
+*/

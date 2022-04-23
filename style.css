@@ -1,0 +1,262 @@
+/******
+
+
+
+******/
+
+@font-face {
+    font-family: "ubuntu";
+    src: url(/Assets/Fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: "ubuntu-bold";
+    src: url(/Assets/Fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: "ubuntu-mono";
+    src: url(/Assets/Fonts/UbuntuMono-Regular.ttf);
+}
+
+:root {
+    /* -- Couleurs -- */
+    --color-1: #fa7b6c;
+    --color-2:  #0042b0;
+    --color-3:  #0042b0;
+    --color-4:  #717597;
+    --color-5:  #ebeeff;
+    --color-6: #2f4858;
+    /* -- Menu -- */
+    --height-menu: 60px;
+}
+
+
+/****** Généralités ******/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "ubuntu", sans-serif ;
+    /*border: 0.5px solid red;*/
+}
+
+body {
+    font-family: "ubuntu", sans-serif;
+}
+
+h1 {
+    font-family: "ubuntu-bold", sans-serif;
+    font-size: 2.5rem;
+    
+}
+
+h2 {
+    font-family: "ubuntu-bold", sans-serif;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+h3 {
+    font-family: "ubuntu-bold", sans-serif;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--color-3);
+}
+
+li {
+    list-style-type: none;
+}
+
+/****** Navigation ******/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: var(--height-menu);
+    background: var(--color-5);
+    padding: 10px 0px 10px 10px;
+}
+
+nav a {
+    color: var(--color-1);
+    padding: 5px;
+    
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    width: 70%; 
+}
+nav > ul > li {
+    text-align: center;
+    align-self: center;
+    width: 100%;
+} 
+
+nav > ul > li:nth-child(2) > a::after, nav > ul > li:nth-child(3) > a::after {
+    content: ">";
+    font-size: 1rem;
+    display: inline-block;
+}
+@keyframes rotationFleche {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    } 
+}
+
+.nav-1:hover > a::after {
+    animation: rotationFleche 0.2s linear forwards;
+}
+
+.nav-1 {
+    position: relative;
+}
+
+.nav-2 {
+    display: none;
+    position: absolute;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1px 6px 16px -4px rgba(250,123,108,0.73);
+    width: 100%; 
+    padding: 10px 5px 5px;
+    line-height: 1.5rem;
+}
+
+nav > ul > li:hover .nav-2 {
+    display: block;
+}
+.nav-2 > li > a:hover {
+    background-color: var(--color-1);
+    color: white;
+}
+
+/****** -- Main -- ******/
+
+main {
+    margin: 40px 20px;
+}
+
+main li {
+    margin: 0 20px;
+    list-style-type: disc;
+}
+
+main a {
+    color: var(--color-1);
+}
+main a:visited {
+    color: var(--color-2);
+}
+
+main img {
+    max-height: 200px;
+    border-radius: 10px;
+    
+}
+
+.text-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    
+}
+
+nav > ul {
+    display: flex;
+    text-align: center;
+    height: var(--height-menu);
+}
+
+nav > ul > li {
+    position: relative;
+    height: 100%;
+    flex: 1;
+}
+
+nav ul li a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+
+}
+
+.nav-2 {
+    margin-top: var(--height-menu);
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.nav-2 li a {
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+@keyframes rotationFleche {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+    
+}
+
+.nav-1:hover > a::after {
+    animation: rotationFleche 0.2s linear forwards;
+
+}
+
+@keyframes apparitionMenu {
+    100% {
+        max-height: 50em;
+
+    }
+}
+
+.nav-1:hover > .nav-2 {
+    animation: apparitionMenu 1s forwards;
+}

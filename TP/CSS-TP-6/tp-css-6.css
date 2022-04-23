@@ -1,0 +1,251 @@
+/***
+
+
+
+***/
+
+@font-face {
+  font-family: "lato-thin";
+  src: url(./fonts/Lato-Thin.ttf);
+}
+@font-face {
+  font-family: "lato";
+  src: url(./fonts/Lato-Regular.ttf);
+}
+
+/****** -- General -- ******/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+}
+
+body {
+  font-family: "lato-thin", sans-serif;
+}
+
+h1 {
+  font-size: 3.4;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+}
+
+p {
+  line-height: 36px;
+  margin: 25px 0;
+  font-size: 1rem;
+}
+
+a,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+button,
+.button {
+  font: bold 0.75rem "lato";
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 15px 30px;
+  border-radius: 50px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover,
+.social-network a:hover {
+  border: 1px solid skyblue;
+  color: skyblue;
+}
+
+/****** -- Header -- ******/
+
+header {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.header-right {
+  background: url(./img/banner.jpg) right/cover;
+}
+
+.header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+/****** -- Main -- ******/
+
+header,
+.main-1,
+.main-2 {
+  box-shadow: inset 0px 1px 0 rgba(128, 128, 128, 0.761);
+}
+
+.main-1 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  min-height: 400px;
+}
+
+.main-1-left {
+  background: url(./img/img-left.jpg) center/cover;
+}
+.main-1-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.main-2 {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  min-height: 400px;
+}
+
+.main-2-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.main-2-right {
+  background: url(./img/img-right.jpg) center/cover;
+}
+
+/****** -- Form -- ******/
+
+.form {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.form-grid {
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "i1 i2"
+    "ta ta";
+  gap: 20px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  margin: 20px 0 40px;
+  border-radius: 4px;
+  border: 1px solid grey;
+  padding: 10px;
+  transition: 0.3s;
+  resize: none;
+}
+
+input[type="text"]:focus {
+  border: 1px solid skyblue;
+}
+
+.form-grid div:nth-child(3) {
+  grid-area: ta;
+}
+
+textarea:focus {
+  border: 1px solid skyblue;
+  height: 200px;
+}
+
+/****** -- Social -- ******/
+
+.social-network {
+    padding: 70px 0 90px;
+    position: relative;
+}
+
+.social-network::before {
+    content: "";
+    position: absolute;
+    background: grey;
+    width: 80%;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+.social-network ul {
+    display: flex;
+    justify-content: space-around;
+    width: 33%;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.social-network a {
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 50px;
+    transition: 0.3s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****** -- Responsive ******/
+
+@media screen and (max-width:650px) {
+    
+    /****** -- Header -- ******/
+
+    header,.main-1, .main-2 {
+        display: block;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .header-right {
+        background: url(./img/banner.jpg) center/cover;
+        height: 50vh;
+        margin-top: 20px;
+
+    }
+
+    .social-network a {
+        display: inline-block;
+        border: 1px solid grey;
+        border-radius: 30px;
+        transition: 0.3s;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

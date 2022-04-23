@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
+
+@font-face {
+    font-family: "font-1";
+    src: url(./assets/Nunito-VariableFont_wght.ttf);
+}
+
+/** {
+    margin: 0px;
+    padding: 0px;
+}*/
+
+body {
+    font-family: "font-1", serif;
+    background: url(./assets/pexels-symeon-ekizoglou-2105834.jpg) no-repeat fixed center/cover;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    color: rgba(0, 0, 139, 0.747);
+    text-shadow: 2px 2px 4px rgba(0, 139, 139, 0.82);
+    text-align: center;
+    font-family: Nunito, sans-serif;
+}
+
+h1::first-letter {
+    color: whitesmoke;
+}
+
+main {
+    background: whitesmoke;
+    width: 90%;
+    min-height: 500px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0 #575756;
+}
+
+
+
+.positioning,
+.flexbox {
+    border: 1px solid grey;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+/* Positionning */
+
+.positioning {
+    position: relative;
+}
+
+#circle {
+    background: coral;
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: 110px;
+    box-shadow: 0px 2px 12px 5px #575756;
+    z-index: 1;
+}
+
+#rectangle {
+    height: 15px;
+    width: 25%;
+    background: cornflowerblue;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+
+}
+
+/* Flexbox */
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+
+}
+
+li {
+    list-style-type: none;
+    font-size: 0.7rem;
+    height: 160px;
+    width: 160px;
+    background: coral;
+    /* Centrer les élements verticalement */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 20px;
+
+}
+
+.img {
+    text-align: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "i1 i2"
+        "ta ta"
+        "bt bt";
+}
+
+input,
+textarea {
+    margin: 5px;
+    height: 45px;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-family: "font-1";
+}
+
+#firstname {
+    grid-area: i1;
+    width: auto;
+}
+
+#surname {
+    grid-area: i2;
+}
+
+textarea {
+    grid-area: ta;
+    resize: none;
+}
+
+input[type="submit"] {
+    grid-area: bt;
+    cursor: pointer;
+    background: #575756;
+}
+
+input[type="submit"]:hover {
+    background: black;
+    color: white;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+    .grid-container {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    form {
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "i1"
+            "i2"
+            "ta"
+            "bt";
+    }
+}

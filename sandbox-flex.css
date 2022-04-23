@@ -1,0 +1,109 @@
+/******* -- Generalités -- *******/
+
+.memo-flexbox-image {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.memo-flexbox-image img {
+    height: 100px;
+    margin: 10px auto;
+
+}
+
+.flex-wrap-image img {
+    display: flex;
+    margin: 10px auto;
+    height: 200px;
+}
+
+.flex-grow-image img {
+    display: flex;
+    margin: 10px auto;
+    height: 200px;
+}
+
+
+
+
+/************************************* -- SANDBOX -- ************************************/
+
+.sandbox-container div {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+
+}
+
+.sandbox-container {
+    background-color: white;
+    border: solid black;
+    height: 300px;
+    /*********/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 100%;
+
+}
+
+.sandbox-1 {
+    background-color: #025159;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.sandbox-2 {
+    background-color: #F28705;
+    border: 4px solid red;
+
+}
+
+.sandbox-3 {
+    background-color: #F25C05;
+}
+
+.sandbox-4 {
+    background-color: #F20505;
+}
+
+.sandbox-5 {
+    background-color: #A60D0D;
+}
+
+.sandbox-6 {
+    background-color: #9EF8EE;
+
+}
+
+/*
+.sandbox-container div:nth-child(1) {
+    background-color: #025159;
+
+}
+
+.sandbox-container div:nth-child(2) {
+    background-color: #F28705;
+}
+
+.sandbox-container div:nth-child(3) {
+    background-color: #F25C05;
+}
+
+.sandbox-container div:nth-child(4) {
+    background-color: #F20505;
+    
+}
+
+.sandbox-container div:nth-child(5) {
+    background-color: #A60D0D;
+}
+
+.sandbox-container div:nth-child(6) {
+    background-color: #9EF8EE;
+}
+*/

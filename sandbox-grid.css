@@ -1,0 +1,65 @@
+/******* -- Généralités -- *******/
+
+.grid-template-area-pic {
+    display: grid;
+    width: 100%;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-template-area-pic img:nth-child(2) {
+    width: 100%;
+    align-self: center;
+}
+
+
+
+
+
+.sandbox-container div {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.sandbox-container {
+  height: 30vh;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "a f"
+    "b e"
+    "c d";
+}
+
+.sandbox-container div:nth-child(1) {
+  background-color: #025159;
+  grid-area: a;
+}
+
+.sandbox-container div:nth-child(2) {
+  background-color: #f28705;
+  grid-area: b;
+}
+
+.sandbox-container div:nth-child(3) {
+  background-color: #f25c05;
+  grid-area: c;
+}
+
+.sandbox-container div:nth-child(4) {
+  background-color: #f20505;
+  grid-area: d;
+}
+
+.sandbox-container div:nth-child(5) {
+  background-color: #a60d0d;
+  grid-area: e;
+}
+
+.sandbox-container div:nth-child(6) {
+  background-color: #9ef8ee;
+  grid-area: f;
+}

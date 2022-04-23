@@ -1,0 +1,41 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "a a b"
+        "d c b"
+        "d e e";
+    gap: 10px;
+}
+
+/*div { ***** -- Correction, on met un "gap" à la place de margin.
+    margin: 10px;
+}*/
+
+
+div:nth-child(1) {
+    background: yellow;
+    grid-area: a;
+}
+
+div:nth-child(2) {
+    background: purple;
+    grid-area: b;
+}
+
+div:nth-child(3) {
+    background: green;
+    grid-area: c;
+}
+
+div:nth-child(4) {
+    background: red;
+    grid-area: d;
+}
+
+div:nth-child(5) {
+    background: orchid;
+    grid-area: e;
+}

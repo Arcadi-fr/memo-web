@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sandbox-flex.css">
+    <title>Flexbox</title>
+</head>
+
+<body>
+    <nav>
+        <img src="/Assets/Images/logo.png" alt="">
+        <ul>
+            <li class="nav-1">
+                <a href="./index.html">Accueil</a>
+            </li>
+            <li class="nav-1">
+                <a href="./html.html">HTML <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="nav-2">
+                    <li>
+                        <a href="/general-html.html">Generalités</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-1/cours-html-1.html">Cours HTML 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-1/tp-html-1.html">TP HTML 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-2/tp-html-2.html">TP HTML 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-3/tp-html-3.html">TP HTML 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-1">
+                <a href="./css.html">CSS <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="nav-2">
+                    <li>
+                        <a href="/css-general.html">Généralités</a>
+                    </li>
+                    <li>
+                        <a href="./css-flexbox.html">Flexbox</a>
+                    </li>
+                    <li>
+                        <a href="./css-grid.html">Grid</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-1/cours-css-1.html">Cours CSS 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-2/cours-css-2.html">Cours CSS 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-1/tp-css-1.html">TP CSS 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-2/tp-css-2.html">TP CSS 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-3/tp-css-3.html">TP CSS 3</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-4/tp-css-4.html">TP CSS 4</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-5/tp-css-5.html">TP CSS 5</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-6/tp-css-6.html">TP CSS 6</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-1">
+                <a href="./Ressources.html">Ressources</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="memo-flexbox-1">
+            <h1>Flexbox</h1>
+            <p>
+                Flexbox = un contenant et des items à l'interieur. On place le <code>display: flex;</code> sur le
+                contenant et cela influe sur les items de premier niveau.
+                Il y a deux axes : <code>row</code> par défaut et <code>column</code> on peut spécifier :
+                <code>flex-direction: column</code>.
+            </p>           
+            <p>
+                On peut donner une propriété qui s'appelle <code>order</code> qui va s'appliquer aux items et pas aux
+                contenants. <br>
+                Par défaut tous les items ont un order à 0. Si l'on met un items à 1, il sera positionné à la fin.
+                Si l'on place l'item à -1, il sera positionné en premier.
+            </p>
+            <div class="memo-flexbox-image">
+                <img src="./Assets/Images/css-flexbox-5.png"> <img src="./Assets/Images/css-flexbox-4.png">
+            </div>
+        </section>
+        <section class="memo-flexbox-2">
+            <h2>
+                Attributs flexbox
+            </h2>
+            <h3>
+                Justify-content
+            </h3>
+            <p>
+                Permet d'aligner les items sur l'axe principale. <a
+                    href="https://developer.mozilla.org/fr/docs/Web/CSS/justify-content">Justify-content</a>
+            </p>
+            <h3>
+                Align-content
+            </h3>
+            <p>
+                Pour centrer verticalement les élements dans leur conatainer. <a
+                    href="https://developer.mozilla.org/fr/docs/Web/CSS/align-content">Align-content</a><br>
+                Pour individualiser l'alignemenet d'un élément : <code>align-self</code> <a
+                    href="https://developer.mozilla.org/fr/docs/Web/CSS/align-self">align-self</a>
+            </p>
+            <h3>
+                Flex-wrap
+            </h3>
+            <p>Permet de faire un retour à la ligne lors d'un resize par exmple. <a
+                    href="https://developer.mozilla.org/fr/docs/Web/CSS/flex-wrap">Flex-wrap</a>
+            <div class="flex-wrap-image">
+                <img src="./Assets/Images/css-flexbox-6.png">
+            </div>
+
+            </p>
+            <h3>Flex-grow</h3>
+            <p>Permet de définir l'expansion d'un élément par rapport aux autres. <a
+                    href="https://developer.mozilla.org/fr/docs/Web/CSS/flex-grow">Flex-grow</a>
+            <div class="flex-grow-image">
+                <img src="./Assets/Images/css-flexbox-7.png">
+            </div>
+
+            </p>
+            <h3>
+                Ressources
+            </h3>
+            <ul>
+                <li>
+                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Css-tricks</a>
+                </li>
+                <li>
+                    <a
+                        href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Mozilla</a>
+                </li>
+                <li>
+                    <a href="https://flexbox.help/">Flexbox help</a>
+                </li>
+            </ul>
+        </section>
+        <section class="sandbox">
+            <h2>Bac à sable</h2>
+            <br>
+            <br>
+            <div class="sandbox-container">
+                <div class="sandbox-1">1</div>
+                <div class="sandbox-2">2</div>
+                <div class="sandbox-3">3</div>
+                <div class="sandbox-4">4</div>
+                <div class="sandbox-5">5</div>
+                <div class="sandbox-6">6</div>
+            </div>
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>
