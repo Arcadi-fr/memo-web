@@ -1,0 +1,46 @@
+/***
+
+SETTINGS regroupe tous les réglages généraux.
+
+***/
+
+$color1: palevioletred;
+$color2: rgba(0, 0, 255, 0.467);
+$color3: orange;
+$font1: "font1", sans-serif;
+
+@font-face {
+  font-family: "font1";
+  src: url(/TP/SASS-1/assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+/****** -- Mixins -- ******/
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $color2;
+  font-family: $font1;
+}
+
+
+
+section {
+    height: 600px;
+    @include center;
+
+    p {
+        color: $color3;
+        text-align: center;
+        width: 50%;
+    }
+}

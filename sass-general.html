@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <img src="/Assets/Images/logo.png" alt="">
+        <ul>
+            <li class="nav-1">
+                <a href="./index.html">Accueil</a>
+            </li>
+            <li class="nav-1">
+                <a href="./html.html">HTML </a>
+                <ul class="nav-2">
+                    <li>
+                        <a href="/general-html.html">Generalités</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-1/cours-html-1.html">Cours HTML 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-1/tp-html-1.html">TP HTML 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-2/tp-html-2.html">TP HTML 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/HTML-TP-3/tp-html-3.html">TP HTML 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-1">
+                <a href="./css.html">CSS </a>
+                <ul class="nav-2">
+                    <li>
+                        <a href="/css-general.html">Généralités</a>
+                    </li>
+                    <li>
+                        <a href="./css-flexbox.html">Flexbox</a>
+                    </li>
+                    <li>
+                        <a href="./css-grid.html">Grid</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-1/cours-css-1.html">Cours CSS 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-2/cours-css-2.html">Cours CSS 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-1/tp-css-1.html">TP CSS 1</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-2/tp-css-2.html">TP CSS 2</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-3/tp-css-3.html">TP CSS 3</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-4/tp-css-4.html">TP CSS 4</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-5/tp-css-5.html">TP CSS 5</a>
+                    </li>
+                    <li>
+                        <a href="/TP/CSS-TP-6/tp-css-6.html">TP CSS 6</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-1">
+                <a href="./Ressources.html">Ressources</a>
+            </li>
+        </ul>
+    </nav>
+    <H1>Second test pour GH cette fois en ligne</H1>
+
+    <main>
+        <h1>
+            SASS
+        </h1>
+        <p>
+            SASS est un préprocesseur de CSS. On code en SASS et le code sera transformé en CSS pour être intérprété par le navigateur. Cela permet de coder plus vite du CSS de par l'architecture de SASS. Il faut installer un compiler. Sur VS, "Live sass compiler".
+        </p>
+        <div class="sass-responsive">
+            <h3>
+                Responsive en SASS
+            </h3>
+            <p>
+                Etre responsive en SASS, il faut inclure la média query à l'interieur de la balise : <br>
+                <code>
+                    h1 {<br>
+                        text-align: center; <br>
+                        @media screen and (max-width: 700px) {br
+                        font-size: 2rem; <br>
+                        } <br>
+                    }
+                </code>
+            </p>
+        </div>
+        <div class="sass-variable">
+            <h3>
+                Déclarer des variables 
+            </h3>
+            <p>
+                Il suffit de donner le nom de la variable et la caractériser. Le nom est précédé de "$". : <br>
+                <code>
+                    $color1: pink;
+                </code>
+            </p>
+        </div>
+        <div>
+            <h3>
+                Mixin
+            </h3>
+            <p>
+                C'est une variable dans,laquelle on peut mettre plusieurs lignes. <br>
+                <code>
+                    @mixin center { <br>
+                        display: flex; <br>
+                        justify-content: center; <br>
+                        align-items: center; <br>
+                    }
+                </code>
+                Pour appeler la mixin, on utilise "@include". Attention à ne pas mettre ":" <br>
+                <code>
+                    section { <br>
+                        height: 600px; <br>
+                        @include: center; <br>
+                    }
+                </code>
+            </p>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

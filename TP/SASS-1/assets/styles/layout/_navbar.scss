@@ -1,0 +1,28 @@
+/***
+
+
+
+***/
+
+nav {
+    background: $color1;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    ul {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      
+  
+      li {
+        list-style-type: none;
+        
+      }
+    }
+  }
