@@ -1,0 +1,50 @@
+/***
+
+Généralités
+
+***/
+
+$color1: whitesmoke;
+$color2: black;
+
+@font-face {
+    font-family: "font1";
+    src: url(/TP/SASS-TP-1/assets/fonts/Merriweather-Light.ttf);
+}
+@font-face {
+    font-family: "font2";
+    src: url(/TP/SASS-TP-1/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    h1 {
+        font-family: "font2";
+        text-transform: uppercase;
+        font-size: 4rem;
+        text-align: center;
+        color: $color1;
+        line-height: 1.5em;
+    }
+    h2 {
+        font-family: "font2";
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+}
+
+body {
+    background: url(/TP/SASS-TP-1/assets/img/bg.jpg) fixed center/cover;
+}
+
+
+
