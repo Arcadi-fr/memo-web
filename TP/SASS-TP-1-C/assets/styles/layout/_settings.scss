@@ -85,3 +85,6 @@ body {
         transform: scale(1.05);   
     }
 }
+span, p:not(header p) {
+  color: $color5;
+}
