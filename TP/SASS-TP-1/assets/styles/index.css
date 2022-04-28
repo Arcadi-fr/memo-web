@@ -53,6 +53,79 @@ body {
   background: url(/TP/SASS-TP-1/assets/img/bg.jpg) fixed center/cover;
 }
 
+.rm-button {
+  display: block;
+  font-family: "font2";
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  width: 180px;
+  text-align: center;
+  color: black;
+  margin: 40px auto;
+  border: 0.80px solid black;
+  padding: 10px 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.rm-button:hover {
+  background: black;
+  color: white;
+}
+
+/***
+
+Navbar
+
+***/
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+nav .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav-link a {
+  padding: 20px;
+  font-family: "font2";
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+nav .nav-link a:hover {
+  background: gainsboro;
+  color: black;
+}
+
+nav .nav-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav-social a {
+  padding: 20px 30px;
+  color: white;
+}
+
+nav .nav-social a:hover {
+  background: gainsboro;
+  color: black;
+}
+
 /***
 
 Header
@@ -67,21 +140,24 @@ Header
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+  margin: 140px auto 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 100px;
 }
 
 .pre-header h1 {
   padding: 20px 0;
+  letter-spacing: 10px;
 }
 
 .pre-header p {
   padding: 20px 0 40px;
+  text-align: center;
   font-family: "font1";
   font-style: italic;
   color: whitesmoke;
@@ -102,5 +178,257 @@ Header
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+header .header-date {
+  text-align: center;
+  font-family: "font1";
+  font-size: 1rem;
+  padding: 40px;
+  position: relative;
+}
+
+header .header-date::before {
+  content: "";
+  position: absolute;
+  background: lightgrey;
+  height: 2px;
+  width: 300px;
+  top: 50px;
+  left: 50px;
+}
+
+header h2 {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20 0px;
+}
+
+header p {
+  text-align: center;
+  font-family: "font1";
+  font-style: italic;
+  font-size: 0.8rem;
+  line-height: 3em;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+header .header-image {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header .header-image img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/***
+
+Main
+
+***/
+main {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+main::before {
+  content: "";
+  background: lightgray;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+}
+
+main .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .main-content .main-date {
+  font-family: "font1";
+  color: grey;
+  padding: 30px 0 10px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+main .main-content h3 {
+  font-family: "font2";
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 100%;
+}
+
+main .main-content img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+main .main-content .content-p {
+  font-family: "font1";
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: grey;
+  line-height: 2em;
+  text-align: justify;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  main .main-content {
+    display: block;
+  }
+  main .main-content .main-right {
+    padding-bottom: 20px;
+  }
+}
+
+/***
+
+Footer
+
+
+***/
+footer {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 40px auto 60px;
+  padding: 40px 0;
+}
+
+footer .footer-left {
+  width: 50%;
+}
+
+footer form {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+}
+
+footer form label {
+  font-family: "font2";
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: grey;
+  padding: 20px 0;
+}
+
+footer form input {
+  border: 1px solid grey;
+  border-radius: 3px;
+  height: 40px;
+}
+
+footer form input:focus-visible {
+  outline: 1px auto black;
+}
+
+footer form input[type="submit"] {
+  display: block;
+  background-color: white;
+  font-family: "font2";
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  width: 180px;
+  color: black;
+  margin: 40px auto;
+  border: 0.80px solid black;
+  padding: 10px 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer form input[type="submit"]:hover {
+  background: black;
+  color: white;
+}
+
+footer .footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+}
+
+footer .footer-right div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer .footer-right div h4 {
+  font-family: "font2";
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: grey;
+}
+
+footer .footer-right div p {
+  font-family: "font1";
+  color: grey;
+  font-size: 0.9rem;
+}
+
+footer .footer-right div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+
+footer .footer-right div ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid grey;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 /*# sourceMappingURL=index.css.map */
