@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/***
+
+
+
+***/
+/***
+
+Généralités
+
+***/
+@font-face {
+  font-family: "inter-bold";
+  src: url(/TP/SASS-TP-1-C/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+  font-family: "merri";
+  src: url(/TP/SASS-TP-1-C/assets/fonts/Merriweather-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: #f3f3f3;
+}
+
+body {
+  background: url(/TP/SASS-TP-1-C/assets/img/bg.jpg) fixed center/cover;
+  text-align: center;
+  font-family: "merri", serif;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  background: #111111;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-animation: anim-before 1.5s ease forwards;
+          animation: anim-before 1.5s ease forwards;
+  -webkit-animation-delay: 0.20s;
+          animation-delay: 0.20s;
+}
+
+@-webkit-keyframes anim-before {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes anim-before {
+  to {
+    opacity: 0;
+  }
+}
+
+.btn {
+  background: none;
+  border: 1px solid #111111;
+  height: 45px;
+  width: 170px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-family: "inter-bold", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/***
+
+Header
+
+***/
+/***
+
+Main
+
+***/
+img {
+  width: 50%;
+}
+
+/***
+
+Footer
+
+
+***/
+/*# sourceMappingURL=index.css.map */

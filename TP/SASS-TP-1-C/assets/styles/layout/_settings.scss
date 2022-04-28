@@ -4,65 +4,84 @@ Généralités
 
 ***/
 
-$color1: whitesmoke;
-$color2: black;
-
 @font-face {
-    font-family: "font1";
-    src: url(/TP/SASS-TP-1/assets/fonts/Merriweather-Light.ttf);
+  font-family: "inter-bold";
+  src: url(/TP/SASS-TP-1-C/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 @font-face {
-    font-family: "font2";
-    src: url(/TP/SASS-TP-1/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+  font-family: "merri";
+  src: url(/TP/SASS-TP-1-C/assets/fonts/Merriweather-Light.ttf);
+}
+
+$font1: "inter-bold", sans-serif;
+$font2: "merri", serif;
+
+$color1: rgb(17, 17, 17);
+$color2: rgb(243, 243, 243);
+$color3: rgb(209, 209, 209);
+$color4: rgb(233, 233, 233);
+$color5: rgb(105, 105, 105);
+
+@mixin title {
+  font-family: $font1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    li {
-        list-style: none;
-    }
-    a {
-        text-decoration: none;
-    }
-    h1 {
-        font-family: "font2";
-        text-transform: uppercase;
-        font-size: 4rem;
-        text-align: center;
-        color: $color1;
-        line-height: 1.5em;
-    }
-    h2 {
-        font-family: "font2";
-        text-transform: uppercase;
-        font-size: 2.5rem;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  color: $color2;
 }
 
 body {
-    background: url(/TP/SASS-TP-1/assets/img/bg.jpg) fixed center/cover;
-}
+  background: url(/TP/SASS-TP-1-C/assets/img/bg.jpg) fixed center/cover;
+  text-align: center;
+  font-family: $font2;
+  max-width: 1300px;
+  margin: 0 auto;
 
-.rm-button {
-    display: block;
-    font-family: "font2";
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    width: 180px;
-    text-align: center;
-    color: black;
-    margin: 40px auto;
-    border: 0.80px solid black;
-    padding: 10px 30px;
+  &:before {
+    content: "";
+    position: absolute;
+    background: $color1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    animation: anim-before 1.5s ease forwards;
+    animation-delay: 0.20s;
+
+    @keyframes anim-before {
+      to {
+        opacity: 0;
+      }
+    }
+  }
+}
+.btn {
+    background: none;
+    border: 1px solid $color1;
+    height: 45px;
+    width: 170px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    @include title;
     transition: 0.3s;
 
     &:hover {
-        background: black;
-        color: white;
+        transform: scale(1.05);   
     }
 }
-
-
