@@ -153,6 +153,12 @@ header .header-content h1 {
   letter-spacing: 6px;
 }
 
+@media screen and (max-width: 700px) {
+  header .header-content h1 {
+    font-size: 2rem;
+  }
+}
+
 header .header-content p {
   margin: 40px auto 60px;
   font-style: italic;
@@ -225,6 +231,12 @@ header nav .nav-left li {
   cursor: pointer;
 }
 
+@media screen and (max-width: 700px) {
+  header nav .nav-left li {
+    font-size: 0.5rem;
+  }
+}
+
 header nav .nav-left li:first-child {
   background-color: #f3f3f3;
   color: #111111;
@@ -245,6 +257,12 @@ header nav .nav-right {
   -ms-flex-line-pack: center;
       align-content: center;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  header nav .nav-right {
+    display: none;
+  }
 }
 
 header nav .nav-right li {
@@ -322,6 +340,12 @@ main .section1 h2 {
   font-size: 3rem;
 }
 
+@media screen and (max-width: 700px) {
+  main .section1 h2 {
+    font-size: 1.5rem;
+  }
+}
+
 main .section1 p {
   width: 60%;
   margin: 30px auto;
@@ -342,15 +366,25 @@ main .section2 {
   border-top: 1px solid #d1d1d1;
 }
 
-main .section2 .left-part, main .section2 .right-part {
+@media screen and (max-width: 700px) {
+  main .section2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+main .section2 .left-part,
+main .section2 .right-part {
   padding: 60px;
 }
 
-main .section2 .left-part span, main .section2 .right-part span {
+main .section2 .left-part span,
+main .section2 .right-part span {
   font-size: 0.75rem;
 }
 
-main .section2 .left-part h3, main .section2 .right-part h3 {
+main .section2 .left-part h3,
+main .section2 .right-part h3 {
   margin: 20px 0;
   font-family: "inter-bold", sans-serif;
   letter-spacing: 2px;
@@ -358,7 +392,8 @@ main .section2 .left-part h3, main .section2 .right-part h3 {
   line-height: 28px;
 }
 
-main .section2 .left-part p, main .section2 .right-part p {
+main .section2 .left-part p,
+main .section2 .right-part p {
   text-align: justify;
   line-height: 30px;
   margin: 30px 0;
@@ -375,4 +410,147 @@ Footer
 
 
 ***/
+footer {
+  background: #e9e9e9;
+  min-height: 600px;
+  width: 85%;
+  margin: 0 auto 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+footer form {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  padding: 60px 50px;
+  -ms-grid-rows: 18px 45px 18px 45px 18px 200px 1fr;
+      grid-template-rows: 18px 45px 18px 45px 18px 200px 1fr;
+}
+
+footer form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 0.7rem;
+  font-family: "inter-bold", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: dimgray;
+}
+
+footer form input[type="text"],
+footer form textarea {
+  background: none;
+  border: 1px solid dimgray;
+  border-radius: 4px;
+  resize: none;
+}
+
+footer form .submit-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer form .submit-container .btn {
+  color: dimgray;
+  border: 2px solid dimgray;
+}
+
+footer .infos-contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  border-left: 1px solid #d1d1d1;
+}
+
+@media screen and (max-width: 900px) {
+  footer .infos-contact div:nth-child(1) {
+    border-top: 1px solid #d1d1d1;
+    padding-bottom: 20px;
+  }
+}
+
+footer .infos-contact div {
+  border-bottom: 1px solid #d1d1d1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  footer .infos-contact div {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+footer .infos-contact div h3 {
+  font-family: "inter-bold", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding-left: 40px;
+  text-align: left;
+  color: dimgray;
+}
+
+@media screen and (max-width: 900px) {
+  footer .infos-contact div h3 {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+footer .infos-contact div p {
+  font-size: 0.8rem;
+  line-height: 28px;
+  text-align: left;
+  color: grey;
+}
+
+footer .infos-contact .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .infos-contact .social ul li {
+  border: 1px solid #d1d1d1;
+  border-radius: 150px;
+  height: 40px;
+  width: 40px;
+  font-size: 0.9rem;
+  margin-right: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=index.css.map */

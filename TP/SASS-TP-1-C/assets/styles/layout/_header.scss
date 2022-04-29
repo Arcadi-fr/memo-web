@@ -29,6 +29,10 @@ header {
       @include title;
       font-size: 4rem;
       letter-spacing: 6px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 2rem;
+      }
     }
     p {
       margin: 40px auto 60px;
@@ -64,10 +68,10 @@ header {
       align-items: center;
     }
     .nav-left {
-        &:hover li:not(:hover) {
-            background: none;
-            color: $color2;
-        }
+      &:hover li:not(:hover) {
+        background: none;
+        color: $color2;
+      }
       li {
         @include title;
         font-size: 0.7rem;
@@ -76,6 +80,10 @@ header {
         display: flex;
         align-items: center;
         cursor: pointer;
+
+        @media screen and (max-width: 700px) {
+          font-size: 0.5rem;
+        }
 
         &:first-child {
           background-color: $color2;
@@ -88,23 +96,27 @@ header {
       }
     }
     .nav-right {
-        font-size: 1.1rem;
-        min-width: 100px;
-        width: 25%;
-        max-width: 300px;
-        justify-content: space-around;
-        align-content: center;
-        margin-right: 10px;
+      font-size: 1.1rem;
+      min-width: 100px;
+      width: 25%;
+      max-width: 300px;
+      justify-content: space-around;
+      align-content: center;
+      margin-right: 10px;
 
-        li {
-          transition: 0.3s;
-          cursor: pointer;
-          
-          &:hover {
-            transform: scale(1.3);
-          }
-          
+      @media screen and (max-width:700px) {
+        display: none;
+      }
+      
+
+      li {
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.3);
         }
+      }
     }
   }
 }
