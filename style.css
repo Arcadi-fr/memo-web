@@ -91,7 +91,15 @@ nav {
     top: 0;
     height: var(--height-menu);
     background: var(--color-5);
-    padding: 10px 0px 10px 10px;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 4rem;
 }
 
 nav a {
@@ -109,16 +117,14 @@ nav > ul {
     width: 70%; 
 }
 nav > ul > li {
-    text-align: center;
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 100%;
+    transition: 1s;
 } 
 
-nav > ul > li:nth-child(2) > a::after, nav > ul > li:nth-child(3) > a::after {
-    content: ">";
-    font-size: 1rem;
-    display: inline-block;
-}
 @keyframes rotationFleche {
     0% {
         transform: rotate(0deg);
@@ -128,8 +134,12 @@ nav > ul > li:nth-child(2) > a::after, nav > ul > li:nth-child(3) > a::after {
     } 
 }
 
-.nav-1:hover > a::after {
-    animation: rotationFleche 0.2s linear forwards;
+.nav-1:hover a i {
+    animation: rotationFleche 0.3s linear forwards;
+}
+
+.nav-1 i {
+    font-size: 0.9rem;
 }
 
 .nav-1 {
@@ -139,7 +149,8 @@ nav > ul > li:nth-child(2) > a::after, nav > ul > li:nth-child(3) > a::after {
 .nav-2 {
     display: none;
     position: absolute;
-    background: white;
+    background:var(--color-5);
+    text-align: center;
     border-radius: 5px;
     box-shadow: 1px 6px 16px -4px rgba(250,123,108,0.73);
     width: 100%; 
@@ -149,6 +160,8 @@ nav > ul > li:nth-child(2) > a::after, nav > ul > li:nth-child(3) > a::after {
 
 nav > ul > li:hover .nav-2 {
     display: block;
+    top: 80px;
+   
 }
 .nav-2 > li > a:hover {
     background-color: var(--color-1);
@@ -195,7 +208,27 @@ main img {
     padding: 10px 0;
 }
 
+/*** -- page d'accueil -- ***/
 
+.accueil-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+    gap: 100px;
+    width: 50%;
+    margin: 0 auto 0;
+}
+.accueil-main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.accueil-main div svg{
+    height: 80px;
+    fill: #fa7b6c;
+}
 
 
 

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Sass- générales</title>
 </head>
 
 <body>
@@ -82,12 +82,7 @@
             </li>
         </ul>
     </nav>
-    <H1>Second test pour GH cette fois en ligne</H1>
-
     <main>
-        <h1>
-            SASS
-        </h1>
         <p>
             SASS est un préprocesseur de CSS. On code en SASS et le code sera transformé en CSS pour être intérprété par le navigateur. Cela permet de coder plus vite du CSS de par l'architecture de SASS. Il faut installer un compiler. Sur VS, "Live sass compiler".
         </p>
@@ -100,7 +95,7 @@
                 <code>
                     h1 {<br>
                         text-align: center; <br>
-                        @media screen and (max-width: 700px) {br
+                        @media screen and (max-width: 700px) { <br>
                         font-size: 2rem; <br>
                         } <br>
                     }
@@ -118,7 +113,7 @@
                 </code>
             </p>
         </div>
-        <div>
+        <div class="sass-mixin">
             <h3>
                 Mixin
             </h3>
@@ -129,7 +124,7 @@
                         display: flex; <br>
                         justify-content: center; <br>
                         align-items: center; <br>
-                    }
+                    } <br>
                 </code>
                 Pour appeler la mixin, on utilise "@include". Attention à ne pas mettre ":" <br>
                 <code>
