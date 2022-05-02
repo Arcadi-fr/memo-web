@@ -84,8 +84,30 @@
     </nav>
     <main>
         <p>
-            SASS est un préprocesseur de CSS. On code en SASS et le code sera transformé en CSS pour être intérprété par le navigateur. Cela permet de coder plus vite du CSS de par l'architecture de SASS. Il faut installer un compiler. Sur VS, "Live sass compiler".
+            SASS est un préprocesseur de CSS. On code en SASS et le code sera transformé en CSS pour être intérprété par
+            le navigateur. Cela permet de coder plus vite du CSS de par l'architecture de SASS. Il faut installer un
+            compiler. Sur VS, "Live sass compiler".
         </p>
+        <div class="sass-declaration">
+            <h3>
+                Déclarer son SASS au compilateur
+            </h3>
+            <p>
+                Pour déclarer son Sass au comilateur, il faut créer son "index.scss". Ensuite; liéer les styles
+                contenues dans le dossier "Layout" en commencant par le fichier settings.
+            </p>
+            <p>
+                <code>
+                    @import "./layout/settings";<br>
+                    @import "./layout/header";<br>
+                    @import "./layout/main";<br>
+                    @import "./layout/footer";<br>
+                </code>
+            </p>
+            <p>
+                Les fichiers style contenu dans "Layout" doivent impérativmeent être précédé d'un "_" afin que le compilateur compprenne qu'il ne doit pas en tenir compte. 
+            </p>
+        </div>
         <div class="sass-responsive">
             <h3>
                 Responsive en SASS
@@ -104,7 +126,7 @@
         </div>
         <div class="sass-variable">
             <h3>
-                Déclarer des variables 
+                Déclarer des variables
             </h3>
             <p>
                 Il suffit de donner le nom de la variable et la caractériser. Le nom est précédé de "$". : <br>

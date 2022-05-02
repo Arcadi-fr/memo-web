@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;;;IAII;ACJJ;;;;IAII",
+    "sources": [
+        "sass-tp-ultime.scss",
+        "Layout/_settings.scss",
+        "Layout/_header.scss",
+        "Layout/_main.scss",
+        "Layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "sass-tp-ultime.css"
+}
