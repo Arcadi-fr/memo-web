@@ -1,0 +1,67 @@
+/***
+
+Header
+
+***/
+
+header {
+    height: 100vh;
+    background: url(/TP/SASS-TP-Ultime/assets/images/bg-slider-06.jpg);
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+
+
+        .logo h2 {
+            color: $color1;
+            font-size: 3rem;
+        }
+        .nav-items, a {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            @include upandwhite;
+        }
+        .nav-social {
+            display: flex;
+            justify-content: space-around;
+            width: 10%;
+        }
+    }
+
+    .header-top {
+        display: flex;
+        flex-direction: column;
+        
+
+        h1 {
+            font-size: 4rem;
+            font-family: $font2;
+            color: $color1;
+            text-transform: uppercase;
+            letter-spacing: 0.8rem;
+            
+        }
+        h2 {
+            font-size: 3rem;
+            margin-top: 200px;
+            line-height: 0px;
+            letter-spacing: 0.2rem;
+        }
+        .header-top-img {
+            padding: 50px 0;
+        }
+        
+        p {
+           color: $color1;
+           text-transform: uppercase;
+           font-family: $font3;
+           letter-spacing: 0.2rem;
+        }
+    }
+}

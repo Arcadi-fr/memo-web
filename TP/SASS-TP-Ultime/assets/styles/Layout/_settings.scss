@@ -4,3 +4,61 @@ Settings
 
 ***/
 
+
+/*** --Import -- ***/
+
+@font-face {
+    font-family: "font1";
+    src: url(/TP/SASS-TP-Ultime/assets/fonts/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "font2";
+    src: url(/TP/SASS-TP-Ultime/assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "font3";
+    src: url(/TP/SASS-TP-Ultime/assets/fonts/Roboto-Light.ttf);
+}
+
+/*** -- Varibales -- ***/ 
+
+$font1: "font1";
+$font2: "font2";
+$font3: "font3";
+
+$color1: white;
+$color2: darkgoldenrod;
+$color3: #302a21;
+
+/*** -- Généralités -- ***/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+h2 {
+    font-family: $font1;
+    color: $color2;
+    font-size: 2rem;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+@mixin upandwhite {
+    font-family: $font2;
+    color: $color1;
+    text-transform: uppercase;
+    
+}
+
+p {
+    font-family: $font3;
+    font-size: 0.8rem;
+}
