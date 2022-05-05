@@ -57,8 +57,18 @@ h2 {
     text-transform: uppercase;
     
 }
+body {
+    background: $color3;
+}
 
 p {
     font-family: $font3;
     font-size: 0.8rem;
+}
+
+a :not(nav){
+    color: black;
+}
+a:visited :not(nav) {
+    color: grey;
 }

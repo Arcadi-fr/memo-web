@@ -1,0 +1,113 @@
+/***
+
+Footer
+
+***/
+
+footer {
+    height: 50vh;
+    background: $color3;
+    
+    
+
+    .footer1 {
+        background: url(/TP/SASS-TP-Ultime/assets/images/gmap.jpg) center/cover;
+        height: 70%;
+
+        .footer1-content {
+            background: white;
+            width: 70%;
+            margin: 0 auto;
+            padding: 40px;
+            position: absolute;
+            top: -200px;
+            position: relative;
+            div {
+                position: absolute;
+                top: -35px;
+                left: 50%;
+                transform: translateX(-50%);
+                
+                img {
+                    height: 60px;
+                    border-radius: 50px;
+                }
+            }
+            p {
+                font-family: $font3;
+                font-size: 1rem;
+                line-height: 2rem;
+                padding: 40px 40px 0px;
+            }
+            h6 {
+                font-family: $font3;
+                font-size: 2rem;
+                padding: 20px;
+            }
+            span {
+                font-family: $font3;
+                color: $color2;
+            }
+        }
+    }
+    .footer2 {
+        display: flex;
+        width: 100%;
+        
+        
+        
+        .footer2-left {
+            background-color: black;
+            padding: 40px 40px 40px 20%;
+            width: 50%;
+            
+            
+            h2 {
+                text-align: left;
+            
+            }
+            p {
+                text-align: left;
+                color: white;
+                font-family: $font3;
+                font-size: 0.8rem;
+                padding: 20px 0px;
+                line-height: 1.5rem;
+            }
+
+        }
+        .footer2-right {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            
+            padding: 40px 20% 40px 40px;
+             h3 {
+                 font-family: $font2;
+                 font-size: 1rem;
+                 color: $color1;
+                 text-transform: uppercase;
+                 text-align: left;
+             }
+             input {
+                 background: none;
+                 color: grey;
+                 border: 1px solid grey;
+                 margin: 10px 0 40px;
+                 width: 50%;
+                 height: 30px;
+                 border-radius: 4px;
+             }
+             ul {
+                 display: flex;
+                 width: 50%;
+                 justify-content: space-between;
+                 color: grey;
+                 padding: 20px 0px;
+                 
+
+             }
+        }
+
+    }
+}
