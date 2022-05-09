@@ -1,3 +1,9 @@
+/***
+
+SETTINGS
+
+***/
+
 @font-face {
   font-family: "Allura";
   src: url(../fonts/Allura-Regular.ttf);
@@ -11,21 +17,20 @@
   src: url(../fonts/Roboto-Light.ttf);
 }
 
-$font1: Allura, cursive;
-$font2: Poppins, serif;
-$font3: Roboto, serif;
-$white: #eee;
-$black: #21201e;
-$grey: rgb(182, 182, 182);
-$color1: rgb(166, 114, 69);
+$font1: "Allura", cursive;
+$font2: "Poppins", serif;
+$font3: "Roboto", serif;
+$color1: #eee;
+$color2: #21201e;
+$color3: rgb(182, 182, 182);
+$color4: rgb(166, 114, 69);
 
-@mixin childCenter {
+@mixin childcenter {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-@mixin alignChildren($space) {
+@mixin alignchildren($space) {
   display: flex;
   align-items: center;
   justify-content: $space;
@@ -36,13 +41,11 @@ $color1: rgb(166, 114, 69);
   padding: 0;
   box-sizing: border-box;
 }
-
 li {
   list-style: none;
 }
-
 body {
   text-align: center;
   font-family: $font3;
-  background: $black;
+  background: $color2;
 }

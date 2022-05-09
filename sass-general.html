@@ -155,6 +155,15 @@
                         @include: center; <br>
                     }
                 </code>
+                On peut y intégrer une variable : <br>
+                <code>
+                    @mixin alignchildren($space) { <br>
+                        display: flex; <br>
+                        align-items: center;<br>
+                        justify-content: $space;<br>
+                    }<br>
+                    @include alignchildren(spacearound)<br>
+                </code>
             </p>
         </div>
 
