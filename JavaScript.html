@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        JavaScript
+    </h1>
+    <p>
+        Javascript est un langage de script mutliplateforme et orienté objet. C'est un langage léger qui doit faire
+        partie d'un environnement hôte (navigateur web par exmpel) pour qu'il puisse être utilisé sur les objets de cet
+        environnement. <br>
+        cela signifie que JS éxécute les actions à mesure qu'il les lis.
+    </p>
+    <main>
+        <h2></h2>
+        <ul>
+            <h3>
+                Création du fichier
+            </h3>
+            <li>
+                Le fichier JS doit toujours être lu en dernier. On le met à la fin du body. Si le JS est placé dans le
+                head il faut rajouter un defer pour demander une lecture diféré :
+                <code> &lt;script defer src="chemind'acces"> &lt;/scipt> </code>
+            </li>
+            <li>
+                Le JS ne supporte pas la casse. Pour une variable, utiliser le kamelCase.
+            </li>
+        </ul>
+        <ul>
+            <h3>
+                Variable
+            </h3>
+            <li>
+                Une variable est une "boîte", un espace, dans laquelle on stocke des éléments. En donnant un nom à cette
+                boîte on peut l'appeler.
+            </li>
+            <li>
+                Pour initaliser la variable, on utilise plus <code>var</code> <br>
+                Ancienne syntaxe : <code>var unTexte = "Voici un texte"</code>
+            </li>
+            <li>
+                La nouvelle syntaxe inclus variable et constante. <br>
+                Constante : <code>const prenom = "Justine";</code>
+                Variable : <code>let unChiffre = "24"; </code>
+            </li>
+            <li>
+                Concaténation pour ajouter une variable à une autre variable :
+                <code>let nouvelleChaine = "Chaine précédente : " + chaine;</code>
+            </li>
+        </ul>
+        <ul>
+            <h3>
+                Les types de données en JS
+            </h3>
+            <li>
+                Chaine de caractère : <code>let chaineDeCaractere = "Je suis une chaine 1234567890";</code>
+            </li>
+            <li>
+                Chiffres : <code>let number = 24;</code>
+            </li>
+            <li>
+                Booléen : <code>let boolean = true;</code>
+            </li>
+            <li>
+                Array : <code>let array = ["je", "suis", 24, false ];</code>
+            </li>
+            <li>
+                Object : <code>
+                    let object = { <br>
+                        prenom: "Amaury", <br>
+                        age: 20, <br>
+                        ville: "Brest", <br>
+                    }
+                </code>
+            </li>
+            <li>
+                Null : <code>let arbre = null;</code>
+            </li>
+            <li>
+                Pour connaître le type de variable : <code>console.log(typeof array);</code>
+            </li>
+        </ul>
+
+        <h3>
+            Les opérateurs
+        </h3>
+        <div class="JavaScript-1-image">
+            <img src="/Assets/Images/JavaScript-1.png" alt="">
+        </div>
+        <ul>
+            <h3>
+                Les fonctions
+            </h3>
+            <li>
+                C'est un espace comme une variable mais qui peut éxécuter plusieurs cvommandes à la fois.
+            </li>
+            <li>
+                <code>
+                    function faireQuelqueChose() { <br>
+                        console.log("Je fais un truc"); <br>
+                        console.log("Trop Cool !"); <br>
+                    }
+                </code>
+            </li>
+            <li>
+                Appeler par : <code>faireQuelqueChose();</code>
+            </li>
+            <li>
+                Fonction flêchée : <div class="JavaScript-1-image">
+                    <img src="/Assets/Images/JavaScript-2.png" alt="">
+                </div>
+            </li>
+            <li>
+                Pour qu'une fonctione se joue seule : <code>
+                    (function maFonction() { <br>
+                        console.log("Je me joue toute seule"); <br>
+                    }()); <br>
+                </code>
+                Ou en flêché : <code>
+                    (() => { <br>
+                        console.log("Je me joue aussi toute seule"); <br>
+                    })(); <br>
+                </code>
+            </li>
+        </ul>
+
+
+
+    </main>
+</body>
+
+</html>
